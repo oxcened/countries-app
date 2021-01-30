@@ -27,14 +27,7 @@
   "timezones": [
     "UTC+01:00"
   ],
-  "borders": [
-    "AUT",
-    "FRA",
-    "SMR",
-    "SVN",
-    "CHE",
-    "VAT"
-  ],
+  "borders": [],
   "nativeName": "Italia",
   "numericCode": "380",
   "currencies": [
