@@ -6,5 +6,8 @@
   "languages": "Languages",
   "currencies": "Currencies",
   "capital": "Capital",
-  "genericError": "Something went wrong!"
+  "genericError": "Something went wrong!",
+  "borderingCountries": "Bordering countries",
+  "goBack": "Go back",
+  "notFound": "Not found"
 }

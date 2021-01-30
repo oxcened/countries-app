@@ -5,6 +5,7 @@ import { Country } from '../../models/Country';
 import { CountryItem } from '../../components/CountryItem/CountryItem';
 import { AppRoute, getCountryDetailRoute } from '../../models/AppRoute';
 import { scrollToTop } from '../../utils/utils';
+import { locale } from '../../utils/locale';
 
 export const CountryDetail = () => {
     const history = useHistory();
@@ -42,18 +43,18 @@ export const CountryDetail = () => {
         history.push(AppRoute.ROOT);
     };
 
-    const mBordering = bordering?.map(c => {
-        return <CountryItem country={c} onClick={() => countryClick(c.alpha3Code)} />;
+    const mBordering = bordering?.map((c, i) => {
+        return <CountryItem key={i} country={c} onClick={() => countryClick(c.alpha3Code)} />;
     });
 
     return <div className='countryDetail'>
-        <button className='backButton' onClick={backClick}>Go back</button>
-        {isNotFound ? <h1>Not found</h1> : <>
+        <button className='backButton' onClick={backClick}>{locale.goBack}</button>
+        {isNotFound ? <h1>{locale.notFound}</h1> : <>
             {country && <div className='countryContainer'>
                 <CountryItem country={country} isDetail />
             </div>}
             {!!bordering?.length && <>
-                <p className='color-primary'>Bordering countries</p>
+                <p className='color-primary'>{locale.borderingCountries}</p>
                 <div className='bordering'>
                     {mBordering}
                 </div>
