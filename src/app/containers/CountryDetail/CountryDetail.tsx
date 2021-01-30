@@ -35,7 +35,7 @@ export const CountryDetail = () => {
     }, [id]);
 
     const countryClick = (id: string) => {
-        history.push(getCountryDetailRoute(id))
+        history.push(getCountryDetailRoute(id));
     };
 
     const backClick = () => {
@@ -43,7 +43,7 @@ export const CountryDetail = () => {
     };
 
     const mBordering = bordering?.map(c => {
-        return <CountryItem country={c} onClick={() => countryClick(c.alpha3Code)} />
+        return <CountryItem country={c} onClick={() => countryClick(c.alpha3Code)} />;
     });
 
     return <div className='countryDetail'>

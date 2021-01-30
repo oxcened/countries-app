@@ -12,12 +12,12 @@ export const Home = () => {
     useEffect(() => {
         getAllCountries().then(c => {
             setCountries(c ?? []);
-        })
+        });
     }, []);
 
     const countryClick = ({ alpha3Code }: Country) => {
         history.push(getCountryDetailRoute(alpha3Code));
-    }
+    };
 
     const mappedCountries = countries.map((c, i) =>
         <CountryItem

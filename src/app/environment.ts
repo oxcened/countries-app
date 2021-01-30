@@ -4,4 +4,4 @@ export type Environment = {
 
 export const environment: Environment = {
     countryApiBaseUrl: 'https://restcountries.eu/rest/v2/'
-}
+};

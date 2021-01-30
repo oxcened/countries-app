@@ -4,5 +4,5 @@ export enum AppRoute {
 }
 
 export const getCountryDetailRoute = (id: string) => {
-    return AppRoute.COUNTRY_DETAIL.replace(':id', id)
-}
+    return AppRoute.COUNTRY_DETAIL.replace(':id', id);
+};

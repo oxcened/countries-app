@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Country } from '../../models/Country';
 import { locale } from '../../utils/locale';
 import { Field, FieldProps } from '../LabelValue/Field';

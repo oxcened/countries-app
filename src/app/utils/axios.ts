@@ -14,7 +14,7 @@ const handleCallEnd = () => {
         requests = 0;
         LoaderController.getInstance().postMessage(false);
     }
-}
+};
 
 myAxios.interceptors.request.use(config => {
     requests++;
@@ -31,6 +31,6 @@ myAxios.interceptors.response.use(response => {
 }, error => {
     handleCallEnd();
     return Promise.reject(error);
-})
+});
 
 export default myAxios;
