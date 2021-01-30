@@ -1,0 +1,15 @@
+.countryDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+
+  .bordering, .countryContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

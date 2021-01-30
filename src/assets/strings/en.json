@@ -1,0 +1,9 @@
+{
+  "appName": "Countries App",
+  "country": "Country",
+  "population": "Population",
+  "flag": "Flag",
+  "languages": "Languages",
+  "currencies": "Currencies",
+  "capital": "Capital"
+}

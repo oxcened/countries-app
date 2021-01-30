@@ -1,0 +1,30 @@
+@import '../../../assets/scss/theme';
+
+.countryItem {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+
+  .flag {
+    height: 5rem;
+    border-radius: 10px;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0.2rem 0;
+  }
+
+  .value {
+    font-size: 1.1rem;
+    color: $color-primary;
+    margin: 0;
+  }
+}
