@@ -1,14 +1,14 @@
 @import "theme";
 
 // Containers
-@import "src/app/containers/Home/home";
-@import "src/app/containers/CountryDetail/countryDetail";
+@import "../../app/containers/Home/home";
+@import "../../app/containers/CountryDetail/countryDetail";
 
 // Components
-@import "src/app/components/CountryItem/countryItem";
-@import "src/app/components/Navbar/navbar";
-@import "src/app/components/Loader/loader";
-@import "src/app/components/LabelValue/labelValue";
+@import "../../app/components/CountryItem/countryItem";
+@import "../../app/components/Navbar/navbar";
+@import "../../app/components/Loader/loader";
+@import "../../app/components/LabelValue/labelValue";
 
 // Libraries
 @import '~react-toastify/dist/ReactToastify.css';
