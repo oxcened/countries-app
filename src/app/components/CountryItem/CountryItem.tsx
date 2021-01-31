@@ -10,7 +10,7 @@ export type CountryItemProps = {
     onClick?: () => void;
 }
 
-export const CountryItem = ({ country: { name, flag, population, languages, currencies, capital }, onClick, isDetail }: CountryItemProps) => {
+export const CountryItem = ({ country: { name, flag, population, languages = [], currencies = [], capital }, onClick, isDetail }: CountryItemProps) => {
     const mLanguages = languages.map(l => l.name).join(', ');
     const mCurrencies = currencies.map(l => l.code).join(', ');
 
