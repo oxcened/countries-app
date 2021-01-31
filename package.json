@@ -1,5 +1,6 @@
 {
   "name": "countries-app",
+  "description": "Countries App for Distilled SCH",
   "author": "Alen Ajam",
   "version": "1.0.0",
   "private": true,
