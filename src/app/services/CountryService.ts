@@ -43,11 +43,11 @@ export const getCountry = async (id: string) => {
 };
 
 export const getCountries = async (ids: string[]) => {
+    const params = {
+        codes: ids.join(';'),
+        fields: simpleFields.join(';')
+    };
     try {
-        const params = {
-            codes: ids.join(';'),
-            fields: simpleFields.join(';')
-        };
         const res = await myAxios.get<Country[]>(Endpoint.COUNTRY_DETAIL, { params });
         return res.data;
     } catch (e) {
