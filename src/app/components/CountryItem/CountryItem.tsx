@@ -24,7 +24,7 @@ export const CountryItem = ({ country: { name, flag, population, languages = [],
         ] : []
     ];
 
-    const mappedFields = fields.map((f, i) => <Field key={i} {...f} />);
+    const mappedFields = fields.map(f => <Field key={f.label} {...f} />);
 
     return <div className='countryItem' onClick={onClick}>
         <img className='flag' src={flag} alt={`${name} ${locale.flag}`} />

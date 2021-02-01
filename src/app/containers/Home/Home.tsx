@@ -19,9 +19,9 @@ export const Home = () => {
         history.push(getCountryDetailRoute(alpha3Code));
     };
 
-    const mappedCountries = countries.map((c, i) =>
+    const mappedCountries = countries.map(c =>
         <CountryItem
-            key={i}
+            key={c.alpha3Code}
             country={c}
             onClick={() => countryClick(c)}
         />);

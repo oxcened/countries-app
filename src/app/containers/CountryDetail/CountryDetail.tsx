@@ -43,8 +43,8 @@ export const CountryDetail = () => {
         history.push(AppRoute.ROOT);
     };
 
-    const mBordering = bordering?.map((c, i) => {
-        return <CountryItem key={i} country={c} onClick={() => countryClick(c.alpha3Code)} />;
+    const mBordering = bordering?.map(c => {
+        return <CountryItem key={c.alpha3Code} country={c} onClick={() => countryClick(c.alpha3Code)} />;
     });
 
     return <div className='countryDetail'>
